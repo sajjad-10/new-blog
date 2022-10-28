@@ -5,12 +5,10 @@ $font_family: YekanBakh, tahoma, arial;
     font-size: rem(20);
     line-height: rem(20);
     font-weight: 500;
-
     @include mq_min($xs) {
         font-size: rem(25);
         line-height: rem(25);
     }
-
     @include mq_min($md) {
         font-size: rem(30);
         line-height: rem(30);
@@ -21,13 +19,9 @@ $font_family: YekanBakh, tahoma, arial;
     font-size: rem(11);
     line-height: rem(18.65);
     font-weight: 500;
-
     @include mq_min($xs) {
-
     }
-
     @include mq_min($md) {
-
     }
 }
 @mixin button__more__0 {
@@ -35,13 +29,9 @@ $font_family: YekanBakh, tahoma, arial;
     font-size: rem(15);
     line-height: rem(22.5);
     font-weight: 700;
-
     @include mq_min($xs) {
-
     }
-
     @include mq_min($md) {
-
     }
 }
 @mixin button__tab__0 {
@@ -49,13 +39,9 @@ $font_family: YekanBakh, tahoma, arial;
     font-size: rem(16);
     line-height: rem(24);
     font-weight: 700;
-
     @include mq_min($xs) {
-
     }
-
     @include mq_min($md) {
-
     }
 }
 @mixin data__0 {
@@ -90,5 +76,29 @@ $font_family: YekanBakh, tahoma, arial;
     @include mq_min($xs) {
     }
     @include mq_min($md) {
+    }
+}
+@mixin section_header__title__0 {
+    font-family: $font_family;
+    font-size: rem(20);
+    line-height: rem(30);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(24);
+        line-height: rem(36);
+    }
+}
+@mixin section_header__subtitle__0 {
+    font-family: $font_family;
+    font-size: rem(14);
+    line-height: rem(21);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(16);
+        line-height: rem(24);
     }
 }

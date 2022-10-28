@@ -1760,6 +1760,44 @@ input.nice-select.open:-webkit-autofill {
         width: unset;
         padding: 1.5rem 2rem; } }
 
+.tab-content {
+  display: none; }
+  .tab-content.active {
+    display: block; }
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-header .title {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 900; }
+    @media only screen and (min-width: 1051px) {
+      .section-header .title {
+        font-size: 1.5rem;
+        line-height: 2.25rem; } }
+  .section-header .subtitle {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 700;
+    margin-bottom: 10px; }
+    @media only screen and (min-width: 1051px) {
+      .section-header .subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
+  .section-header.mode--border .section-header__container {
+    position: relative; }
+    .section-header.mode--border .section-header__container::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 3px;
+      background-color: #0080ff;
+      bottom: 0px; }
+
 * {
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
