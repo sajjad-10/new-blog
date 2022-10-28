@@ -68,6 +68,16 @@ $font_family: YekanBakh, tahoma, arial;
         line-height: rem(30);
     }
 }
+@mixin card__title__1 {
+    font-family: $font_family;
+    font-size: rem(36);
+    line-height: rem(54);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
 @mixin card__description__0 {
     font-family: $font_family;
     font-size: rem(15);
