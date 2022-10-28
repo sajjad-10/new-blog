@@ -1,8 +1,10 @@
 .section-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
+    gap: 32px;
     .title {
         @include section_header__title__0;
     }

@@ -70,3 +70,21 @@
 /**
  * form input placeholder for different engines
  */
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .section .section-container {
+    max-width: 1280px;
+    width: 100%; }
+  .section.mode--category-detail .section-header {
+    padding-right: 16px;
+    padding: 32px 16px 32px 0; }
+    @media only screen and (min-width: 1051px) {
+      .section.mode--category-detail .section-header {
+        padding: 42px 16px 42px 0; } }
+  .section.mode--category-detail .tab-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.875rem;
+    padding: 0 16px; }

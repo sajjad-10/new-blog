@@ -1760,15 +1760,24 @@ input.nice-select.open:-webkit-autofill {
         width: unset;
         padding: 1.5rem 2rem; } }
 
+.nav-bar-tab {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px; }
+
 .tab-content {
   display: none; }
   .tab-content.active {
-    display: block; }
+    display: flex; }
 
 .section-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  gap: 32px; }
   .section-header .title {
     font-family: YekanBakh, tahoma, arial;
     font-size: 1.25rem;

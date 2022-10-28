@@ -1,10 +1,14 @@
 .nav-bar-tab {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
     &__tab-link {
     }
 }
 .tab-content {
     display: none;
     &.active {
-        display: block;
+        display: flex;
     }
 }

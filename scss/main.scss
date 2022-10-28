@@ -1,4 +1,32 @@
 @import "library/library"; // for each file important
 @import "common/common";
-@import "pages/pages"; 
+@import "pages/pages";
 
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .section-container {
+        max-width: 1280px;
+        width: 100%;
+    }
+    &.mode{
+        &--category-detail{
+            .section-header{
+                padding-right: 16px;
+                padding: 32px 16px 32px 0;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    padding: 42px 16px 42px 0;
+                }
+            }
+            .tab-content{
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: rem(30);
+                padding: 0 16px;
+            }
+        }
+    }
+}
