@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <link rel="stylesheet" href="./css/critical.css"> 
-        <link rel="stylesheet" href="./css/main.css">
-        <title>Page title</title>
-    </head>
 
-    <body>
-        <h1 class="first-for-test--0">media queries / Mobile First</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/critical.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Card components</title>
+</head>
+
+<body>
+    <h1 class="first-for-test--0">media queries / Mobile First</h1>
+    <div><mark> Base: Blog Tab // describe: </mark></div>
+    <section>
+        <div class="card mode--blog-detail">
+            <img class="img card__img" src="./img/card/card-01.svg" alt="">
+            <div class="card__body">
+                <div class="detail">
+                    <a class="button mode--blog-tab theme--primary" href="http://">
+                        <span class="button__text">آموزش</span>
+                    </a>
+                    <a class="button mode--date" href="http://">
+                        <span class="button__text">۱ مرداد ۱۴۰۱</span>
+                    </a>
+                </div>
+                <h1 class="title">ایمیل سازمانی چیست؟ آموزش کامل ساخت ایمیل سازمانی</h1>
+                <p class="description">چقدر با ایمیل سازمانی و اهمیت آن در کسب و کار آشنا هستید؟ مهم نیست که کسب‌وکار
+                    شما چقدر بزرگ یا کوچک باشد</p>
+                <div class="footer">
+                    <a class="button mode--more hover--primary" href="http://">
+                        <span class="button__text">ادامه مطلب</span>
+                        <span class="button__icon"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 0.999999L1.70711 8.29289C1.31658 8.68342 1.31658 9.31658 1.70711 9.70711L9 17"
+                                    stroke="#848484" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
 </html>

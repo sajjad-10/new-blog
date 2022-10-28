@@ -1,0 +1,76 @@
+.card {
+    &.mode {
+        &--blog-detail {
+            color: color(Gray_4);
+            display: flex;
+            gap: 8px;
+            @include mq_min($xs) {
+            }
+            @include mq_min($md) {
+                max-width: 382px;
+                flex-direction: column;
+            }
+            .detail {
+                display: flex;
+                justify-content: space-between;
+                order: 1;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    order: 0;
+                }
+            }
+            .title {
+                @include card__title__0;
+                text-align: justify;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    text-align: inherit;
+                    padding: 24px 0;
+                }
+            }
+            .description {
+                @include card__description__0;
+                text-align: justify;
+                display: none;
+                @include mq_min($xs) {
+                    display: block;
+                }
+                @include mq_min($md) {
+                }
+            }
+            .footer {
+                display: none;
+                justify-content: flex-end;
+                padding-top: 24px;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    display: flex;
+                }
+            }
+            .card__img {
+                width: 40%;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    width: unset;
+                }
+            }
+            .card__body {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    width: unset;
+                    padding: rem(24) rem(32);
+                }
+            }
+        }
+    }
+}
