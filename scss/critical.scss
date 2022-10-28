@@ -6,14 +6,20 @@
 * {
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
+    direction: rtl;
 }
-body{
+a {
+    color: inherit;
+}
+
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    background-color: gray
+    // background-color: gray;
+    font-size: 16px;
 }
 .first-for-test--0 {
     @include first_for_test__0;
@@ -26,4 +32,3 @@ body{
         background-color: green;
     }
 }
-

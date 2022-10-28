@@ -1,24 +1,23 @@
-
 /**
  * z-indexes
  * check z() in _function.scss
  */
 $z-layers: (
-	header: 100,
-	menu: 150,
-	modal: 500,
-	modal_popup: 501,
+    header: 100,
+    menu: 150,
+    modal: 500,
+    modal_popup: 501,
 );
 
 /**
  * media query breakpoints
  */
-$xxs :400px;
-$xs :500px;
-$sm :800px;
-$md :1050px;
-$xmd :1200px;
-$lg :1400px;
+$xxs: 400px;
+$xs: 500px;
+$sm: 800px;
+$md: 1050px;
+$xmd: 1200px;
+$lg: 1400px;
 $xlg: 1900px;
 $xxlg: 2500px;
 
@@ -27,18 +26,18 @@ $xxlg: 2500px;
  * check width() in _function.scss
  */
 $widths: (
-	xlg: rem(1350),
-	lg1: rem(1250),
-	lg2: rem(1220),
-	md1: rem(1130),
-	md2: rem(1050),
-	md3: rem(1090),
-	sm1: rem(900),
-	sm2: rem(800),
-	sm3: rem(720),
-	xs1: rem(650),
-	xs2: rem(600),
-	xs3: rem(512),
+    xlg: rem(1350),
+    lg1: rem(1250),
+    lg2: rem(1220),
+    md1: rem(1130),
+    md2: rem(1050),
+    md3: rem(1090),
+    sm1: rem(900),
+    sm2: rem(800),
+    sm3: rem(720),
+    xs1: rem(650),
+    xs2: rem(600),
+    xs3: rem(512),
 );
 
 /**
@@ -46,75 +45,120 @@ $widths: (
  * check height() in _function.scss
  */
 $heights: (
-	header: rem(120),
-	mobile-header: rem(100),
+    header: rem(120),
+    mobile-header: rem(100),
 );
-
 
 /**
  * colors
  * check color() in _function.scss
  */
 $colors: (
-	blue_f:#F8FDFF, 
-	blue: #1C5BFF,
-	blue_dark1: #2250C8,
-	blue_dark:#000D58,
-	blue_lighter:#317EF4,
-	blue_darker: #0C152C,
-	blue_gray : #465E82,
-	
-	gray:#465E82,
+    blue_f: #f8fdff,
+    blue: #1c5bff,
+    blue_dark1: #2250c8,
+    blue_dark: #000d58,
+    blue_lighter: #317ef4,
+    blue_darker: #0c152c,
+    blue_gray: #465e82,
 
-	cyan_dark:#CCE9FF,
-	cyan_dark2:#65BEFF,
+    gray: #465e82,
 
-	gray_f5: #F5F5F5,
-	gray_f: #F7F7F7,
-	gray_f2: #F2F2F2,
-	gray_e: #E6E6E6,
-	gray_d: #D9D9D9,
-	gray_d6: #D6D6D6,
-	gray_c: #cccccc,
-	gray_b: #B3B3B3,
-	gray_9: #999999,
-	gray_8: #808080,
-	gray_7: #777777,
-	gray_70: #707070,
-	gray_6: #666666,
-	gray_6c: #6c6c6c,
-	gray_4: #4D4D4D,
-	gray_5: #5C5C5C,
-	gray_2: #222222,
-	gray_1: #1F364C,
+    cyan_dark: #cce9ff,
+    cyan_dark2: #65beff,
 
-	blue_008: #0085E6,
-	blue_009: #0092FF,
-	blue_005: #005B9F,
-	blue_1: #137FCF,
-	blue_16: #164571,
-	blue_3: #3F80B2,
-	blue_4: #43ABF8,
-	blue_48: #48B1FF,
-	blue_7: #7EBBE8,
-	blue_9: #98CDF2,
-	blue_8: #80C9FF,
-	blue_2: #21E2E2,
-	blue_5: #52ACEA,
-	blue_30: #30A3D1,
-	blue_e: #E2F3FF,
-	blue_d: #D6EEFF,
-	blue_f2: #F2FAFF,
-	blue_f1: #F1F9FF,
-	blue_a: #AFD4EF,
+    gray_f5: #f5f5f5,
+    gray_f: #f7f7f7,
+    gray_f2: #f2f2f2,
+    gray_e: #e6e6e6,
+    gray_d: #d9d9d9,
+    gray_d6: #d6d6d6,
+    gray_c: #cccccc,
+    gray_b: #b3b3b3,
+    gray_9: #999999,
+    gray_8: #808080,
+    gray_7: #777777,
+    gray_70: #707070,
+    gray_6: #666666,
+    gray_6c: #6c6c6c,
+    gray_4: #4d4d4d,
+    gray_5: #5c5c5c,
+    gray_2: #222222,
+    gray_1: #1f364c,
 
-	green:#24B77E,
-	green_e:#E7F7F1,
+    blue_008: #0085e6,
+    blue_009: #0092ff,
+    blue_005: #005b9f,
+    blue_1: #137fcf,
+    blue_16: #164571,
+    blue_3: #3f80b2,
+    blue_4: #43abf8,
+    blue_48: #48b1ff,
+    blue_7: #7ebbe8,
+    blue_9: #98cdf2,
+    blue_8: #80c9ff,
+    blue_2: #21e2e2,
+    blue_5: #52acea,
+    blue_30: #30a3d1,
+    blue_e: #e2f3ff,
+    blue_d: #d6eeff,
+    blue_f2: #f2faff,
+    blue_f1: #f1f9ff,
+    blue_a: #afd4ef,
 
-	white: #FFFFFF,
-	bedge: #FFBC98,
+    green: #24b77e,
+    green_e: #e7f7f1,
 
-	red_f: #FF5F5F,
-	red_f0: #F06464,
-	red_ff: #FF6262,
+    white: #ffffff,
+    bedge: #ffbc98,
+
+    red_f: #ff5f5f,
+    red_f0: #f06464,
+    red_ff: #ff6262,
+
+    Gray_0: #f6f6f6,
+    Gray_1: #e0e0e0,
+    Gray_2: #c1c1c1,
+    Gray_025: #878787,
+    Gray_3: #848484,
+    Gray_4: #515151,
+    Black: #282828,
+    Green_01: #cdffe1,
+    Green_02: #9dffcc,
+    Green_03: #6afec0,
+    Green_04: #46ffc5,
+    Green_05: #08ffc8,
+    Green_06: #05dbc1,
+    Green_07: #04b7b3,
+    Green_08: #018a92,
+    Green_09: #01667a,
+    Purple_01: #c8c8fa,
+    Purple_02: #9393f7,
+    Purple_03: #5b5ae2,
+    Purple_04: #3131c5,
+    Purple_05: #0000a0,
+    Purple_06: #010088,
+    Purple_07: #000072,
+    Purple_08: #00015d,
+    Purple_09: #01004c,
+    ِYllow_01: #fff7d3,
+    ِYllow_02: #ffeaab,
+    ِYllow_03: #ffdc7e,
+    ِYllow_04: #ffcf60,
+    ِYllow_05: #fac13c,
+    ِYllow_06: #db961d,
+    ِYllow_07: #b77715,
+    ِYllow_08: #935a0d,
+    ِYllow_09: #794509,
+    ِBlue_01: #cbefff,
+    ِBlue_02: #99dbfe,
+    ِBlue_03: #65c2ff,
+    ِBlue_04: #3fa9ff,
+    ِBlue_05: #0080ff,
+    ِBlue_06: #0063db,
+    ِBlue_07: #0149b7,
+    ِBlue_08: #003396,
+    ِBlue_09: #00247a,
+    Hover_01: #eef7ff,
+    Hover_02: #e3f2ff,
 );

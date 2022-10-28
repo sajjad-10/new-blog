@@ -1636,9 +1636,137 @@ input.nice-select.open:-webkit-autofill {
   .hidden-lg {
     display: none !important; } }
 
+.button {
+  vertical-align: middle;
+  display: flex;
+  align-items: center; }
+  .button .button__icon {
+    display: flex; }
+  .button.mode--blog-tab {
+    color: #0080ff;
+    background-color: #fff;
+    border-radius: 1.125rem;
+    padding: 0px 0.5rem;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.6875rem;
+    line-height: 1.16562rem;
+    font-weight: 500; }
+    @media only screen and (min-width: 1051px) {
+      .button.mode--blog-tab {
+        padding: 0.15625rem 0.75rem; } }
+    .button.mode--blog-tab.theme--primary {
+      background-color: #eef7ff; }
+  .button.mode--tab {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    border-radius: 1.125rem;
+    padding: 0.28125rem 1rem;
+    color: #848484;
+    display: inline-flex; }
+  .button.mode--more {
+    color: #515151;
+    gap: 1rem;
+    padding: 0.28125rem 1rem;
+    padding-left: 1.25rem;
+    border-radius: 0.5rem;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.9375rem;
+    line-height: 1.40625rem;
+    font-weight: 700; }
+  .button.mode--date {
+    color: #878787;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    font-weight: 500; }
+    @media only screen and (min-width: 1051px) {
+      .button.mode--date {
+        font-size: 0.8125rem;
+        line-height: 1.25rem; } }
+  .button.hover--primary:hover {
+    background-color: #eef7ff;
+    color: #0080ff; }
+    .button.hover--primary:hover path {
+      stroke: #0080ff; }
+  .button.hover--secondary:hover {
+    background-color: #eef7ff;
+    color: #515151; }
+    .button.hover--secondary:hover path {
+      stroke: #0080ff; }
+  .button.active--primary {
+    background-color: #0080ff;
+    color: #fff; }
+
+.card.mode--blog-detail {
+  color: #515151;
+  display: flex;
+  gap: 8px; }
+  @media only screen and (min-width: 1051px) {
+    .card.mode--blog-detail {
+      max-width: 382px;
+      flex-direction: column; } }
+  .card.mode--blog-detail .detail {
+    display: flex;
+    justify-content: space-between;
+    order: 1; }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .detail {
+        order: 0; } }
+  .card.mode--blog-detail .title {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 700;
+    text-align: justify; }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .title {
+        font-size: 1.25rem;
+        line-height: 1.875rem; } }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .title {
+        text-align: inherit;
+        padding: 24px 0; } }
+  .card.mode--blog-detail .description {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.9375rem;
+    line-height: 1.40625rem;
+    font-weight: 500;
+    text-align: justify;
+    display: none; }
+    @media only screen and (min-width: 501px) {
+      .card.mode--blog-detail .description {
+        display: block; } }
+  .card.mode--blog-detail .footer {
+    display: none;
+    justify-content: flex-end;
+    padding-top: 24px; }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .footer {
+        display: flex; } }
+  .card.mode--blog-detail .card__img {
+    width: 40%; }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .card__img {
+        width: unset; } }
+  .card.mode--blog-detail .card__body {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media only screen and (min-width: 1051px) {
+      .card.mode--blog-detail .card__body {
+        width: unset;
+        padding: 1.5rem 2rem; } }
+
 * {
   transition: all 0.2s ease-in-out;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  direction: rtl; }
+
+a {
+  color: inherit; }
 
 body {
   display: flex;
@@ -1646,7 +1774,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  background-color: gray; }
+  font-size: 16px; }
 
 .first-for-test--0 {
   font-family: YekanBakh, tahoma, arial;
