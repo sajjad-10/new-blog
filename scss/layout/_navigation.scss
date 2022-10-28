@@ -1,0 +1,10 @@
+.nav-bar-tab {
+    &__tab-link {
+    }
+}
+.tab-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
