@@ -1,0 +1,22 @@
+{
+  "name": "easy-sass-compile-setup",
+  "version": "1.0.0",
+  "description": "Responsive website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajjad-10/easy-sass-compile-setup.git"
+  },
+  "author": "Sajjad Fallahi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sajjad-10/easy-sass-compile-setup/issues"
+  },
+  "homepage": "https://github.com/sajjad-10/easy-sass-compile-setup#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

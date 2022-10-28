@@ -1,0 +1,29 @@
+@import "base/base";
+@import "library/library"; // for each file important
+@import "global/global"; // base class
+@import "components/components"; // this is for atomic block
+@import "layout/layout"; // create little block components
+* {
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: gray
+}
+.first-for-test--0 {
+    @include first_for_test__0;
+    background-color: blue;
+
+    @include mq_min($xs) {
+        background-color: red;
+    }
+    @include mq_min($md) {
+        background-color: green;
+    }
+}
+

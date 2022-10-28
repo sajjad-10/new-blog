@@ -1,0 +1,120 @@
+
+/**
+ * z-indexes
+ * check z() in _function.scss
+ */
+$z-layers: (
+	header: 100,
+	menu: 150,
+	modal: 500,
+	modal_popup: 501,
+);
+
+/**
+ * media query breakpoints
+ */
+$xxs :400px;
+$xs :500px;
+$sm :800px;
+$md :1050px;
+$xmd :1200px;
+$lg :1400px;
+$xlg: 1900px;
+$xxlg: 2500px;
+
+/**
+ * some useful dimensions
+ * check width() in _function.scss
+ */
+$widths: (
+	xlg: rem(1350),
+	lg1: rem(1250),
+	lg2: rem(1220),
+	md1: rem(1130),
+	md2: rem(1050),
+	md3: rem(1090),
+	sm1: rem(900),
+	sm2: rem(800),
+	sm3: rem(720),
+	xs1: rem(650),
+	xs2: rem(600),
+	xs3: rem(512),
+);
+
+/**
+ * some useful dimensions
+ * check height() in _function.scss
+ */
+$heights: (
+	header: rem(120),
+	mobile-header: rem(100),
+);
+
+
+/**
+ * colors
+ * check color() in _function.scss
+ */
+$colors: (
+	blue_f:#F8FDFF, 
+	blue: #1C5BFF,
+	blue_dark1: #2250C8,
+	blue_dark:#000D58,
+	blue_lighter:#317EF4,
+	blue_darker: #0C152C,
+	blue_gray : #465E82,
+	
+	gray:#465E82,
+
+	cyan_dark:#CCE9FF,
+	cyan_dark2:#65BEFF,
+
+	gray_f5: #F5F5F5,
+	gray_f: #F7F7F7,
+	gray_f2: #F2F2F2,
+	gray_e: #E6E6E6,
+	gray_d: #D9D9D9,
+	gray_d6: #D6D6D6,
+	gray_c: #cccccc,
+	gray_b: #B3B3B3,
+	gray_9: #999999,
+	gray_8: #808080,
+	gray_7: #777777,
+	gray_70: #707070,
+	gray_6: #666666,
+	gray_6c: #6c6c6c,
+	gray_4: #4D4D4D,
+	gray_5: #5C5C5C,
+	gray_2: #222222,
+	gray_1: #1F364C,
+
+	blue_008: #0085E6,
+	blue_009: #0092FF,
+	blue_005: #005B9F,
+	blue_1: #137FCF,
+	blue_16: #164571,
+	blue_3: #3F80B2,
+	blue_4: #43ABF8,
+	blue_48: #48B1FF,
+	blue_7: #7EBBE8,
+	blue_9: #98CDF2,
+	blue_8: #80C9FF,
+	blue_2: #21E2E2,
+	blue_5: #52ACEA,
+	blue_30: #30A3D1,
+	blue_e: #E2F3FF,
+	blue_d: #D6EEFF,
+	blue_f2: #F2FAFF,
+	blue_f1: #F1F9FF,
+	blue_a: #AFD4EF,
+
+	green:#24B77E,
+	green_e:#E7F7F1,
+
+	white: #FFFFFF,
+	bedge: #FFBC98,
+
+	red_f: #FF5F5F,
+	red_f0: #F06464,
+	red_ff: #FF6262,
+);

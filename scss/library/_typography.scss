@@ -1,0 +1,18 @@
+$font_family: YekanBakh, tahoma, arial;
+// large 25 00 ,medium 15 25 ,small 0 15
+@mixin first_for_test__0 {
+    font-family: $font_family;
+    font-size: rem(20);
+    line-height: rem(20);
+    font-weight: 500;
+
+    @include mq_min($xs) {
+        font-size: rem(25);
+        line-height: rem(25);
+    }
+
+    @include mq_min($md) {
+        font-size: rem(30);
+        line-height: rem(30);
+    }
+}

@@ -1,0 +1,72 @@
+/**
+ * media queries
+ * @param  {int} $width
+ */
+/**
+ * colored overlay on top of elements
+ * using pseudo elements
+ * @param  {string} $pos      before OR after
+ * @param  {string} $color    hex OR rgb(a)
+ * @param  {int} $z_index: 0  z-index of pseudo element
+ */
+/**
+ * make element center in parent
+ * using absolute positioning
+ * @param  {boolean} $vertical
+ * @param  {boolean} $horizontal
+ */
+/**
+ * generate grid classes => check _grid.scss
+ * @param  {string} screen width name
+ */
+/**
+ * return z-index of z-layer maps
+ * maps is placed in _vars.scss
+ * @param  {string} $layer
+ * @return {int}
+ */
+/**
+ * return hex code of color maps
+ * maps is placed in _vars.scss
+ * @param  {string} $key color name
+ * @return {string}      color hex
+ */
+/**
+ * return amount of width maps
+ * maps are in _vars.scss
+ * @param  {string} $key width name
+ * @return {string}      width amount
+ */
+/**
+ * return amount of height maps
+ * maps are in _vars.scss
+ * @param  {string} $key height name
+ * @return {string}      height amount
+ */
+/**
+ * generate rem size
+ * @param  {number} $pxsize
+ * @return {string}
+ */
+/**
+ * z-indexes
+ * check z() in _function.scss
+ */
+/**
+ * media query breakpoints
+ */
+/**
+ * some useful dimensions
+ * check width() in _function.scss
+ */
+/**
+ * some useful dimensions
+ * check height() in _function.scss
+ */
+/**
+ * colors
+ * check color() in _function.scss
+ */
+/**
+ * form input placeholder for different engines
+ */

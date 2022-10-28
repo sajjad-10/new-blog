@@ -1,0 +1,167 @@
+/*! start _grid */
+
+.container{
+  @include clearfix;
+  position: relative;
+  margin: 0 auto;
+
+  &--xlg{max-width: width(xlg);}
+  &--lg1{max-width: width(lg1);}
+  &--lg2{max-width: width(lg2);}
+  &--md1{max-width: width(md1);}
+  &--md2{max-width: width(md2);}
+  &--sm1{max-width: width(sm1);}
+  &--sm2{max-width: width(sm2);}
+  &--sm3{max-width: width(sm3);}
+  &--xs1{max-width: width(xs1);}
+  &--xs2{max-width: width(xs2);}
+  &--xs3{max-width: width(xs3);}
+}
+.row{
+  @include clearfix;
+  position: relative;
+  font-size: 0;
+  margin: 0 -15px -30px;
+  &--20-40{
+    @include mq_min($md) {
+      margin: 0 -15px -40px;
+    }
+    @include mq_max($xs){
+      margin-bottom: 0;
+    }
+  }
+  &--25-50{
+    @include mq_min($md) {
+      margin: 0 -15px -50px;
+    }
+  }
+  &--0-30{
+    margin: 0 0 -30px;
+
+    @include mq_min($md){
+      display: flex;
+      width: 100%;
+    }
+
+  }
+  &--11-22{
+    margin: 0 -11px -22px;
+  }
+  &--14-28{
+    margin: 0 -14px -28px;
+  }
+  &--14-p28{
+    margin: 0 -14px 28px;
+  }
+  &--18-36{
+    @include mq_min($md) {
+      margin: 0 -15px -36px;
+    }
+    @include mq_max($xs){
+      margin-bottom: -20px;
+    }
+  }
+  &--12-45{
+    margin: 0 -12px;
+  }
+}
+[class*='col-']{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-size: 1rem;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  .row--20-40 &{
+    @include mq_min($md){
+      margin-bottom: 40px;
+      padding: 0 20px;
+    }
+  }
+  .row--25-50 &{
+    @include mq_min($md){
+      margin-bottom: 50px;
+      padding: 0 25px;
+    }
+  }
+  .row--0-30 &{
+    padding: 0;
+    margin-bottom: 30px;
+
+    @include mq_min_max($sm,$md){
+      padding:0 15px;
+    }
+
+  }
+  .row--11-22 &{
+    padding: 0 11px;
+    margin-bottom: 22px;
+  }
+  .row--14-28 &{
+    padding: 0 14px;
+    margin-bottom: 28px;
+  }
+  .row--18-36 &{
+    @include mq_min($md) {
+      padding: 0 18px;
+      margin-bottom: 36px;
+    }
+    @include mq_max($xs){
+      margin-bottom: 20px;
+    }
+  }
+  .row--12-45 &{
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-bottom: 45px;
+  }
+}
+
+@include col-generator('xs');
+@include mq_min($xs) { @include col-generator('sm'); }
+@include mq_min($sm) { @include col-generator('md'); }
+@include mq_min(1250px) { @include col-generator('xmd'); }
+@include mq_min($md) { @include col-generator('lg'); }
+@include mq_min($lg) { @include col-generator('xlg'); }
+
+
+.visible-xs{
+  @include mq_min($xs){
+    display: none !important;
+  }
+}
+.visible-sm{
+  @include mq_min($sm){
+    display: none !important;
+  }
+}
+.visible-md{
+  @include mq_min($md){
+    display: none !important;
+  }
+}
+.visible-lg{
+  @include mq_min($lg){
+    display: none !important;
+  }
+}
+.hidden-xs{
+  @include mq_max($xs){
+    display: none !important;
+  }
+}
+.hidden-sm{
+  @include mq_max($sm){
+    display: none !important;
+  }
+}
+.hidden-md{
+  @include mq_max($md){
+    display: none !important;
+  }
+}
+.hidden-lg{
+  @include mq_max($lg){
+    display: none !important;
+  }
+}
