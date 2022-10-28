@@ -1,0 +1,30 @@
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        @include section_header__title__0;
+    }
+    .subtitle {
+        @include section_header__subtitle__0;
+        margin-bottom: 10px;
+    }
+    &__container {
+    }
+    &.mode {
+        &--border {
+            .section-header__container {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 48px;
+                    height: 3px;
+                    background-color: color(ِBlue_05);
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
