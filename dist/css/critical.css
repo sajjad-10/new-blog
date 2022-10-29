@@ -1714,6 +1714,10 @@ input.nice-select.open:-webkit-autofill {
     @media only screen and (min-width: 1051px) {
       .card.mode--blog-detail .detail {
         order: 0; } }
+    .card.mode--blog-detail .detail .items-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px; }
   .card.mode--blog-detail .title {
     font-family: YekanBakh, tahoma, arial;
     font-size: 0.875rem;
@@ -1738,18 +1742,20 @@ input.nice-select.open:-webkit-autofill {
     @media only screen and (min-width: 501px) {
       .card.mode--blog-detail .description {
         display: block; } }
-  .card.mode--blog-detail .footer {
+  .card.mode--blog-detail .card__footer {
     display: none;
     justify-content: flex-end;
     padding-top: 24px; }
     @media only screen and (min-width: 1051px) {
-      .card.mode--blog-detail .footer {
+      .card.mode--blog-detail .card__footer {
         display: flex; } }
   .card.mode--blog-detail .card__img {
     width: 40%; }
     @media only screen and (min-width: 1051px) {
       .card.mode--blog-detail .card__img {
         width: unset; } }
+    .card.mode--blog-detail .card__img .tr-img-wrap-outer {
+      width: 100%; }
   .card.mode--blog-detail .card__body {
     width: 60%;
     display: flex;
