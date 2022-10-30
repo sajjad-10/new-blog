@@ -19,7 +19,7 @@
                 @include mq_min($md) {
                     order: 0;
                 }
-                .items-container{
+                .items-container {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 8px;
@@ -57,13 +57,22 @@
             }
             .card__img {
                 width: 40%;
+                flex: 1;
                 @include mq_min($xs) {
                 }
                 @include mq_min($md) {
                     width: unset;
                 }
-                .tr-img-wrap-outer{
+                .tr-img-wrap-outer {
                     width: 100%;
+                }
+                img {
+                    border-radius: 8px;
+                    @include mq_min($xs) {
+                    }
+                    @include mq_min($md) {
+                        border-radius: 16px;
+                    }
                 }
             }
             .card__body {
@@ -82,7 +91,8 @@
             &.theme--primary {
                 display: none;
                 max-width: 791px;
-                position: relative;    height: fit-content;
+                position: relative;
+                height: fit-content;
 
                 @include mq_min($xs) {
                 }
@@ -97,6 +107,7 @@
                     bottom: 0;
                     background-color: rgba(0, 0, 0, 0.5);
                     border-radius: 0px 0px 16px 16px;
+                    width: 100%;
                 }
                 .title {
                     color: #fff;
@@ -109,8 +120,66 @@
                 .description {
                     display: none;
                 }
-                .footer {
+                .card__footer {
                     display: none;
+                }
+            }
+        }
+        &--banner {
+            display: flex;
+            background-color: color(Hover_01);
+            border-radius: 8px;
+            padding: rem(12) rem(16) rem(12) rem(4);
+            max-width: 986px;
+            width: 100%;
+            align-items: flex-end;
+            @include mq_min($xs) {
+            }
+            @include mq_min($md) {
+                border-radius: 24px;
+                padding: rem(26) rem(44) rem(0) rem(44);
+            }
+            .card__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-bottom: 3px;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    padding-bottom: 30px;
+                }
+                .title {
+                    @include card__banner__title__1;
+                    .bolder {
+                        @include card__banner__title__2;
+                    }
+                }
+                .subtitle {
+                    @include card__banner__subtitle__1;
+                    .bolder {
+                        @include card__banner__subtitle__2;
+                    }
+                }
+            }
+            .card__img {
+                &.size {
+                    &--larg {
+                        display: none;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                            display: block;
+                        }
+                    }
+                    &--small {
+                        display: block;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
