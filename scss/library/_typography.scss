@@ -44,6 +44,38 @@ $font_family: YekanBakh, tahoma, arial;
     @include mq_min($md) {
     }
 }
+@mixin button__primary__14 {
+    font-family: $font_family;
+    font-size: rem(14);
+    line-height: rem(21);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(16);
+        line-height: rem(24);
+    }
+}
+@mixin button__primary__15 {
+    font-family: $font_family;
+    font-size: rem(15);
+    line-height: rem(22.7);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
+@mixin button__primary__16 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
 @mixin data__0 {
     font-family: $font_family;
     font-size: rem(12);
@@ -110,5 +142,53 @@ $font_family: YekanBakh, tahoma, arial;
     @include mq_min($md) {
         font-size: rem(16);
         line-height: rem(24);
+    }
+}
+@mixin card__banner__title__1 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 500;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(30);
+        line-height: rem(45);
+    }
+}
+@mixin card__banner__title__2 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(30);
+        line-height: rem(45);
+    }
+}
+@mixin card__banner__subtitle__1 {
+    font-family: $font_family;
+    font-size: rem(12);
+    line-height: rem(18);
+    font-weight: 400;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(17);
+        line-height: rem(25.5);
+    }
+}
+@mixin card__banner__subtitle__2 {
+    font-family: $font_family;
+    font-size: rem(12);
+    line-height: rem(18);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(17);
+        line-height: rem(25.5);
     }
 }
