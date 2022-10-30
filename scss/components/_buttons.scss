@@ -90,6 +90,8 @@
         &--date {
             color: color(Gray_025);
             @include data__0;
+            padding-right: 0px;
+            padding-left: 0px;
         }
     }
     &.hover {
