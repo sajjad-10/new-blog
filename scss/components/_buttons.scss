@@ -6,10 +6,55 @@
         display: flex;
     }
     &.bg--sky {
+        background-color: color(Hover_01) !important;
     }
     &.bg--blue {
+        background-color: color(ِBlue_05) !important;
+        color: #fff !important;
+    }
+    &.bg--dark-blue {
+        background-color: color(ِBlue_05) !important;
+        color: #fff !important;
     }
     &.mode {
+        &--primary {
+            display: inline-flex;
+            color: color(ِBlue_05);
+            border-radius: 8px;
+            border: 1px solid color(ِBlue_05);
+            gap: 11px;
+            padding: rem(4.5) rem(12);
+            letter-spacing: -0.019em;
+            border-radius: 8px;
+            &.size {
+                &--small {
+                    @include button__primary__14;
+                    padding: rem(1.5) rem(8);
+                    border-radius: 6px;
+                    @include mq_min($xs) {
+                    }
+                    @include mq_min($md) {
+                        border-radius: 12px;
+                    }
+                    .button__icon {
+                        padding: 0px 7px;
+                    }
+                }
+                &--medium {
+                    @include button__primary__15;
+                    gap: 13px;
+                }
+                &--larg {
+                    @include button__primary__16;
+                    gap: 10px;
+                    padding: rem(8) rem(16);
+                    border-radius: 12px;
+                    .button__icon {
+                        padding: 0px 7px;
+                    }
+                }
+            }
+        }
         &--blog-tab {
             color: color(ِBlue_05);
             background-color: #fff;
@@ -31,8 +76,8 @@
             @include button__tab__0;
             border-radius: rem(18);
             padding: rem(4.5) rem(16);
-            color: color(Gray_3);            display: inline-flex;
-
+            color: color(Gray_3);
+            display: inline-flex;
         }
         &--more {
             color: color(Gray_4);
@@ -69,9 +114,20 @@
     }
     &.active {
         &--primary {
-            background-color: color(ِBlue_05);
-            color: #fff;
+            background-color: color(ِBlue_05) !important;
+            color: #fff !important;
         }
     }
-
+    &.disable {
+        &--primary {
+            background-color: color(Gray_1) !important;
+            color: color(Gray_2) !important;
+            border: unset;
+        }
+        &--secondary {
+            background-color: color(Gray_D9) !important;
+            color: color(Gray_6D) !important;
+            border: unset;
+        }
+    }
 }
