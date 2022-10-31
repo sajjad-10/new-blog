@@ -11,9 +11,9 @@
         max-width: 1280px;
         width: 100%;
     }
-
     &.mode {
         &--video-player {
+            background-color: color(blue_d);
             .section-body {
                 gap: 32px;
                 display: flex;
@@ -31,6 +31,50 @@
                 }
 
                 .card {
+                     //copy from card theme baner
+                    &:nth-child(1){
+                        display: flex;
+                        max-width: 791px;
+                        position: relative;
+                        height: fit-content;
+                        width: 100%;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                        }
+                        .card__img {
+                            // width: 790px;
+                        }
+                        .card__body {
+                            position: absolute;
+                            bottom: 0;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            border-radius: 0px 0px 16px 16px;
+                            width: 100%;
+                            padding: 16px;
+                            z-index: 3;
+                            max-width: unset;
+                            @include mq_min($xs) {
+                            }
+                            @include mq_min($md) {
+                                padding: 48px;
+                            }
+                        }
+                        .title {
+                            color: #fff;
+                            @include card__title__banner__0;
+                            padding: 0;
+                        }
+                        .detail {
+                            display: none;
+                        }
+                        .description {
+                            display: none;
+                        }
+                        .card__footer {
+                            display: none;
+                        }
+                    }
                     &:nth-child(1) {
                         grid-column: 1/2;
                         grid-row: 1/3;
