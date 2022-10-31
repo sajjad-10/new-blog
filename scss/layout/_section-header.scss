@@ -5,6 +5,12 @@
     align-items: center;
     width: 100%;
     gap: 32px;
+    padding-bottom: 32px;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        padding-bottom: 45px;
+    }
     .title {
         @include section_header__title__0;
     }
