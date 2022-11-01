@@ -88,44 +88,45 @@
                     padding: rem(24) rem(32);
                 }
             }
+            // theme banerr in categore
 
-            &.theme--primary,
-            &:nth-child(4) {
-                display: none;
-                max-width: 791px;
-                position: relative;
-                height: fit-content;
+            // &.theme--primary,
+            // &:nth-child(4) {
+            //     display: none;
+            //     max-width: 791px;
+            //     position: relative;
+            //     height: fit-content;
 
-                @include mq_min($xs) {
-                }
-                @include mq_min($md) {
-                    display: flex;
-                }
-                .card__img {
-                    width: 790px;
-                }
-                .card__body {
-                    position: absolute;
-                    bottom: 0;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border-radius: 0px 0px 16px 16px;
-                    width: 100%;
-                }
-                .title {
-                    color: #fff;
-                    @include card__title__banner__0;
-                    padding: 0;
-                }
-                .detail {
-                    display: none;
-                }
-                .description {
-                    display: none;
-                }
-                .card__footer {
-                    display: none;
-                }
-            }
+            //     @include mq_min($xs) {
+            //     }
+            //     @include mq_min($md) {
+            //         display: flex;
+            //     }
+            //     .card__img {
+            //         width: 790px;
+            //     }
+            //     .card__body {
+            //         position: absolute;
+            //         bottom: 0;
+            //         background-color: rgba(0, 0, 0, 0.5);
+            //         border-radius: 0px 0px 16px 16px;
+            //         width: 100%;
+            //     }
+            //     .title {
+            //         color: #fff;
+            //         @include card__title__banner__0;
+            //         padding: 0;
+            //     }
+            //     .detail {
+            //         display: none;
+            //     }
+            //     .description {
+            //         display: none;
+            //     }
+            //     .card__footer {
+            //         display: none;
+            //     }
+            // }
             &.theme {
                 &--row {
                     flex-direction: row;
@@ -244,6 +245,56 @@
                 //         display: none;
                 //     }
                 // }
+                &--secondary {
+                    position: relative;
+                    max-width: unset;
+                    // width: 100%;
+                    @include mq_min($xs) {
+                    }
+                    @include mq_min($md) {
+                        max-width: 296px;
+                    }
+                    .card__body {
+                        padding: rem(24) rem(0);
+                        position: absolute;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.6);
+                        border-radius: 8px;
+                        width: 100%;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                            padding: rem(24) rem(16);
+                            border-radius: 16px;
+                            position: relative;
+                            background-color: unset;
+                        }
+                    }
+                    .card__img {
+                        width: unset;
+                    }
+                    .title {
+                        color: #fff;
+                        padding: 0 10px;
+                        width: 100%;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                            color: color(Gray_4);
+                            padding-top: 24px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        }
+                    }
+                    .detail {
+                        display: none;
+                        @include mq_min($xs) {
+                        }
+                        @include mq_min($md) {
+                            display: flex;
+                        }
+                    }
+                }
             }
             &.text {
                 &--larg {
