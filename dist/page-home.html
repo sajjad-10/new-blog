@@ -12,6 +12,105 @@
 
 <body>
     <h1 class="first-for-test--0">media queries / Mobile First</h1>
+    <section class="section mode--header-page-home">
+        <div class="section-container">
+            <div class="content-container">
+                <header class="section-header mode--border">
+                </header>
+                <div class="section-body">
+
+                </div>
+            </div>
+            <div class="post-social-container">
+                <div class="slider-container">
+                    <div id="header-social" class="splide" role="group" aria-label="Instagram">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="itemssssss">
+                                        <h1>1</h1>
+                                        <img class="card__img" src="./img/header-page-home.svg" alt="" srcset="">
+                                        <div class="card__body">
+                                            <div class="items-container">
+                                                <a class="button mode--blog-tab theme--primary" href="http://">
+                                                    <span class="button__text">آموزش</span>
+                                                </a>
+                                                <a class="button mode--blog-tab theme--primary" href="http://">
+                                                    <span class="button__text">آموزش</span>
+                                                </a>
+                                                <a class="button mode--blog-tab theme--primary" href="http://">
+                                                    <span class="button__text">آموزش</span>
+                                                </a>
+                                            </div>
+                                            <h1 class="title">ایمیل سازمانی چیست؟ آموزش کامل ساخت ایمیل سازمانی</h1>
+                                            <p class="description">چقدر با ایمیل سازمانی و اهمیت آن در کسب و کار آشنا هستید؟ مهم نیست که کسب‌وکار
+                                                شما چقدر بزرگ یا کوچک باشد</p>
+                                                <a class="button mode--date" href="http://">
+                                                    <span class="button__text">۱ مرداد ۱۴۰۱</span>
+                                                </a>
+                                        </div>
+            
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="itemssssss">
+                                        <h1>2</h1>
+                                        <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                        <div class="card__footer">
+                                            <a class="button mode--primary size--larg bg--blue" href="http://">
+                                                <span class="button__text">دنبال کردن صفحه</span>
+                                                <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                        srcset=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="itemssssss">
+                                        <h1>3</h1>
+                                        <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                        <div class="card__footer">
+                                            <a class="button mode--primary size--larg bg--blue" href="http://">
+                                                <span class="button__text">دنبال کردن صفحه</span>
+                                                <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                        srcset=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="itemssssss">
+                                        <h1>4</h1>
+                                        <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                        <div class="card__footer">
+                                            <a class="button mode--primary size--larg bg--blue" href="http://">
+                                                <span class="button__text">دنبال کردن صفحه</span>
+                                                <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                        srcset=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="itemssssss">
+                                        <h1>5</h1>
+                                        <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                        <div class="card__footer">
+                                            <a class="button mode--primary size--larg bg--blue" href="http://">
+                                                <span class="button__text">دنبال کردن صفحه</span>
+                                                <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                        srcset=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section mode--editors-choise">
         <div class="section-container">
             <header class="section-header mode--border">
@@ -834,10 +933,15 @@
     <script src="./js/navigate-tab-sscript.js"></script>
     <script src="./js/splide.js"></script>
     <script>
+
+        var splides = new Splide("#header-social", {
+            direction: 'rtl',
+            type: 'loop',       
+        });
+        splides.mount();
         var splides = new Splide("#post-social", {
             direction: 'rtl',
             type: 'loop',
-
         });
         splides.mount();
     </script>
