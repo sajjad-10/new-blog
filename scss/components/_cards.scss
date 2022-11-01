@@ -184,6 +184,16 @@
                         }
                         .title {
                             padding: 0px;
+                            text-align: justify;
+                        }
+                        .description {
+                            text-align: justify;
+                            display: none;
+                            @include mq_min($xs) {
+                            }
+                            @include mq_min($md) {
+                                display: block;
+                            }
                         }
                         .detail {
                             order: 1;

@@ -12,6 +12,78 @@
         width: 100%;
     }
     &.mode {
+        &--post-social {
+            .section-container {
+                display: flex;
+                gap: rem(48);
+                flex-direction: column;
+                padding: 0 16px;
+
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    gap: rem(64);
+                    flex-direction: row;
+                    padding: 0px;
+                }
+            }
+            .section-body {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+            }
+            .post-social-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color(Hover_01);
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    border-radius: 32px;
+                }
+                .slider-container {
+                    display: block;
+                    max-width: 360px;
+                    @include mq_min($xs) {
+                    }
+                    @include mq_min($md) {
+                        border-radius: 32px;
+                        max-width: 520px;
+                    }
+                    .itemssssss {
+                        // width: 324px;
+                        // height: 324px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .card__img {
+                            padding: 16px 0;
+                            max-width: 200px;
+
+                            @include mq_min($xs) {
+                                max-width: 324px;
+                            }
+                            @include mq_min($md) {
+                                padding: 60px 0;
+                                max-width: 324px;
+                            }
+                        }
+                    }
+                    .splide__pagination {
+                        display: none;
+                    }
+                    .splide__arrow {
+                        &--prev {
+                            // right: -3em;
+                        }
+                        &--next {
+                            // left: -3em;
+                        }
+                    }
+                }
+            }
+        }
         &--video-player {
             background-color: color(blue_d);
             .section-body {
@@ -31,8 +103,8 @@
                 }
 
                 .card {
-                     //copy from card theme baner
-                    &:nth-child(1){
+                    //copy from card theme baner
+                    &:nth-child(1) {
                         display: flex;
                         max-width: 791px;
                         position: relative;
