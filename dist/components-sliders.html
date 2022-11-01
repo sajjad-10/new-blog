@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/critical.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Slider</title>
+    <style>
+        .containder .itemssssss {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .containder {
+            max-width: 600px;
+        }
+
+        .containder .splide__slide.is-active .itemssssss {
+            background-color: blue !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="first-for-test--0">media queries / Mobile First</h1>
+    <div><mark> Base: Test // describe: </mark></div>
+    <section>
+        <div class="containder" style="direction: unset !important;">
+            <!-- <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="itemssssss">1</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">2</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">3</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">4</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">5</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">6</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">7</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">8</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">9</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">10</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">11</div>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <div><mark> Base: sotiol // describe: theme--primary / </mark></div>
+        <div class="post-social-containder">
+            <div id="post-social" class="splide" role="group" aria-label="Instagram">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="itemssssss">
+                                <h1>1</h1>
+                                <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                <div class="card__footer">
+                                    <a class="button mode--primary size--larg bg--blue" href="http://">
+                                        <span class="button__text">دنبال کردن صفحه</span>
+                                        <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                srcset=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">
+                                <h1>2</h1>
+                                <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                <div class="card__footer">
+                                    <a class="button mode--primary size--larg bg--blue" href="http://">
+                                        <span class="button__text">دنبال کردن صفحه</span>
+                                        <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                srcset=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">
+                                <h1>3</h1>
+                                <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                <div class="card__footer">
+                                    <a class="button mode--primary size--larg bg--blue" href="http://">
+                                        <span class="button__text">دنبال کردن صفحه</span>
+                                        <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                srcset=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">
+                                <h1>4</h1>
+                                <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                <div class="card__footer">
+                                    <a class="button mode--primary size--larg bg--blue" href="http://">
+                                        <span class="button__text">دنبال کردن صفحه</span>
+                                        <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                srcset=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="itemssssss">
+                                <h1>5</h1>
+                                <img class="card__img" src="./img/scrol/image 8.png" alt="" srcset="">
+                                <div class="card__footer">
+                                    <a class="button mode--primary size--larg bg--blue" href="http://">
+                                        <span class="button__text">دنبال کردن صفحه</span>
+                                        <span class="button__icon"><img src="./img/array/large/l.svg" alt=""
+                                                srcset=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/splide.js"></script>
+    <script>
+        // var splide = new Splide(".splide", {
+        //     direction: 'ttb',
+        //     height: '10rem',
+
+        // });
+        // splide.mount();
+        var splides = new Splide("#post-social", {
+            direction: 'rtl',
+            type: 'loop',
+
+        });
+        splides.mount();
+    </script>
+</body>
+
+</html>
