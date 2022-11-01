@@ -218,3 +218,15 @@ $font_family: YekanBakh, tahoma, arial;
         line-height: rem(25.5);
     }
 }
+@mixin slider__post_social__title__0 {
+    font-family: $font_family;
+    font-size: rem(20);
+    line-height: rem(30);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(28);
+        line-height: rem(42);
+    }
+}

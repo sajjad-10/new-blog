@@ -58,10 +58,14 @@
                 align-items: center;
                 justify-content: center;
                 background-color: color(Hover_01);
+                flex-direction: column;
                 @include mq_min($xs) {
                 }
                 @include mq_min($md) {
                     border-radius: 32px;
+                }
+                .title {
+                    @include slider__post_social__title__0;
                 }
                 .slider-container {
                     display: block;
@@ -88,6 +92,7 @@
                             @include mq_min($md) {
                                 padding: 60px 0;
                                 max-width: 324px;
+                                padding-bottom: 0px;
                             }
                         }
                     }

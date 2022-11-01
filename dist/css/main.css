@@ -108,10 +108,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eef7ff; }
+    background-color: #eef7ff;
+    flex-direction: column; }
     @media only screen and (min-width: 1051px) {
       .section.mode--post-social .post-social-container {
         border-radius: 32px; } }
+    .section.mode--post-social .post-social-container .title {
+      font-family: YekanBakh, tahoma, arial;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      font-weight: 900; }
+      @media only screen and (min-width: 1051px) {
+        .section.mode--post-social .post-social-container .title {
+          font-size: 1.75rem;
+          line-height: 2.625rem; } }
     .section.mode--post-social .post-social-container .slider-container {
       display: block;
       max-width: 360px; }
@@ -132,7 +142,8 @@
           @media only screen and (min-width: 1051px) {
             .section.mode--post-social .post-social-container .slider-container .itemssssss .card__img {
               padding: 60px 0;
-              max-width: 324px; } }
+              max-width: 324px;
+              padding-bottom: 0px; } }
       .section.mode--post-social .post-social-container .slider-container .splide__pagination {
         display: none; }
   .section.mode--video-player {
