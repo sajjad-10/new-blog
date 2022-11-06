@@ -2327,6 +2327,51 @@ input.nice-select.open:-webkit-autofill {
       .card.mode--banner .card__img.size--small {
         display: none; } }
 
+.card.mode--banner-email {
+  background-color: #eef7ff;
+  width: 100%;
+  border-radius: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto; }
+  .card.mode--banner-email .title {
+    padding-bottom: 16px;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 2.375rem;
+    line-height: 3.5625rem;
+    font-weight: 900;
+    color: #515151; }
+  .card.mode--banner-email .subtitle {
+    padding-bottom: 48px;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #848484; }
+  .card.mode--banner-email .card__body {
+    width: 100%;
+    max-width: 583px;
+    margin-left: -100px;
+    z-index: 1; }
+  .card.mode--banner-email .card__footer {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    padding: 39px 0 64px 0; }
+  .card.mode--banner-email .email-in {
+    border-radius: 12px;
+    box-shadow: 0px 4px 25px rgba(0, 128, 255, 0.1);
+    width: 100%;
+    text-align: end;
+    padding: 16px 14px;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #c1c1c1; }
+
 .nav-bar-tab {
   display: flex;
   overflow-x: auto;

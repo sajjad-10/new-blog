@@ -262,3 +262,24 @@ $font_family: YekanBakh, tahoma, arial;
     @include mq_min($md) {
     }
 }
+@mixin banner__email__title__38 {
+    font-family: $font_family;
+    font-size: rem(38);
+    line-height: rem(57);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
+@mixin banner__email__subtitle__16 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
+
