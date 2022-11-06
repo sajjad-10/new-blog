@@ -230,3 +230,35 @@ $font_family: YekanBakh, tahoma, arial;
         line-height: rem(42);
     }
 }
+@mixin table__of__content__title__18 {
+    font-family: $font_family;
+    font-size: rem(18);
+    line-height: rem(27);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
+@mixin table__of__content__item__15 {
+    font-family: $font_family;
+    font-size: rem(15);
+    line-height: rem(22.5);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(15);
+        font-weight: 500;
+    }
+}
+@mixin table__of__content__item__active__16 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 700;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}

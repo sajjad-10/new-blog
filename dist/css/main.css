@@ -254,3 +254,75 @@
       display: none; }
     .section.mode--category-detail .card:nth-child(4) .card__footer {
       display: none; }
+
+.table-of-content {
+  width: 100%;
+  max-width: 274px;
+  background-color: #eef7ff;
+  padding: 27px 16px;
+  border-radius: 16px; }
+  @media only screen and (min-width: 1051px) {
+    .table-of-content {
+      background-color: unset; } }
+  .table-of-content__header {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between; }
+  .table-of-content__list {
+    padding-right: 7px; }
+    @media only screen and (min-width: 1051px) {
+      .table-of-content__list {
+        border-right: 1px solid #e0e0e0; } }
+  .table-of-content__item .title {
+    color: #515151;
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 0.9375rem;
+    line-height: 1.40625rem;
+    font-weight: 700;
+    position: relative; }
+    @media only screen and (min-width: 1051px) {
+      .table-of-content__item .title {
+        font-size: 0.9375rem;
+        font-weight: 500; } }
+    @media only screen and (min-width: 1051px) {
+      .table-of-content__item .title {
+        padding: 8px 16px 5px 16px;
+        border-radius: 8px;
+        display: inline-grid; } }
+    .table-of-content__item .title::after {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: #848484;
+      right: -11px;
+      bottom: 42%; }
+      @media only screen and (min-width: 1051px) {
+        .table-of-content__item .title::after {
+          display: none; } }
+  .table-of-content__item.active .title {
+    font-family: YekanBakh, tahoma, arial;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #0080ff; }
+    @media only screen and (min-width: 1051px) {
+      .table-of-content__item.active .title {
+        background-color: #eef7ff; } }
+    .table-of-content__item.active .title::after {
+      background-color: #0080ff; }
+    @media only screen and (min-width: 1051px) {
+      .table-of-content__item.active .title::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        border-radius: 4px;
+        height: 42.9px;
+        right: -9px;
+        z-index: 1;
+        display: block;
+        background-color: unset;
+        background-color: #0080ff; } }
