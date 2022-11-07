@@ -282,4 +282,61 @@ $font_family: YekanBakh, tahoma, arial;
     @include mq_min($md) {
     }
 }
-
+@mixin card__most_used_articl__subtitle__16_24 {
+    font-family: $font_family;
+    font-size: rem(14);
+    line-height: rem(21);
+    font-weight: 500;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(16);
+        line-height: rem(24);
+    }
+}
+@mixin card__most_used_articl__subtitle__16_24 {
+    font-family: $font_family;
+    font-size: rem(14);
+    line-height: rem(21);
+    font-weight: 500;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+    }
+}
+@mixin card__most_used_articl__title__16_22 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(22);
+        line-height: rem(33);
+    }
+}
+@mixin card__most_used_articl__title__16_24 {
+    font-family: $font_family;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(24);
+        line-height: rem(36);
+    }
+}
+@mixin section_header__title__1 {
+    font-family: $font_family;
+    font-size: rem(20);
+    line-height: rem(30);
+    font-weight: 900;
+    @include mq_min($xs) {
+    }
+    @include mq_min($md) {
+        font-size: rem(38);
+        line-height: rem(57);
+    }
+}

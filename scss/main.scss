@@ -249,6 +249,23 @@
                 }
             }
         }
+        &--most-used-articl {
+            .section-body {
+                display: flex;
+                justify-content: center;
+            }
+            .body-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                max-width: 1032px;
+                @include mq_min($xs) {
+                }
+                @include mq_min($md) {
+                    gap: 24px;
+                }
+            }
+        }
     }
 }
 
@@ -289,7 +306,7 @@
                 border-radius: 8px;
                 display: inline-grid;
             }
-            &::after{
+            &::after {
                 position: absolute;
                 content: "";
                 width: 4px;
@@ -313,10 +330,8 @@
                 @include mq_min($md) {
                     background-color: color(Hover_01);
                 }
-                &::after{
-
+                &::after {
                     background-color: color(ِBlue_05);
-
                 }
                 &::before {
                     @include mq_min($xs) {

@@ -35,4 +35,27 @@
             }
         }
     }
+    // center
+    &.theme {
+        &--secondary {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 8px;
+            @include mq_min($xs) {
+            }
+            @include mq_min($md) {
+                gap: 24px;
+            }
+            .subtitle {
+                color: color(Gray_3);
+            }
+            &.text--l {
+                .title {
+                    @include section_header__title__1;
+                }
+            }
+        }
+    }
 }

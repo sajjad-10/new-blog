@@ -254,6 +254,17 @@
       display: none; }
     .section.mode--category-detail .card:nth-child(4) .card__footer {
       display: none; }
+  .section.mode--most-used-articl .section-body {
+    display: flex;
+    justify-content: center; }
+  .section.mode--most-used-articl .body-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1032px; }
+    @media only screen and (min-width: 1051px) {
+      .section.mode--most-used-articl .body-container {
+        gap: 24px; } }
 
 .table-of-content {
   width: 100%;
